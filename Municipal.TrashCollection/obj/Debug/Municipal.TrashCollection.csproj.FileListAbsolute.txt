@@ -84,3 +84,4 @@ C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Mu
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csproj.GenerateResource.Cache
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.dbsetaddedkeyforcollection_calendar.resources
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedcontrollers.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedforeignkeys.resources
