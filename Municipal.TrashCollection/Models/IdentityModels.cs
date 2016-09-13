@@ -31,7 +31,7 @@ namespace Municipal.TrashCollection.Models
         }
         public DbSet<Calendar> calendar { get; set; }
         public DbSet <Collection> collection { get; set; }
-        public DbSet <Collection_Calendar> collectionCalendar{ get; set; }
+        public DbSet <Collection_Calendar> collection_Calendar{ get; set; }
         public DbSet <Company> company { get; set; }
         public DbSet <Employee> employee { get; set; }
         public DbSet <Route> route { get; set; }
