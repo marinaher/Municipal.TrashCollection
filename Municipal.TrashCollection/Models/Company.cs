@@ -10,6 +10,11 @@ namespace Municipal.TrashCollection.Models
     {
         [Key]
         public int ID { get; set; }
+
+        //[ForeignKey("Address")]
+        //public int AddressID { get; set; }
+        //public virtual Address Address {get; set;}
+
         public string Name { get; set; }
     }
 }
