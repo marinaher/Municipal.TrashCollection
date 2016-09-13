@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System;
 
 namespace Municipal.TrashCollection.Models
 {
@@ -29,6 +30,7 @@ namespace Municipal.TrashCollection.Models
         {
             return new ApplicationDbContext();
         }
+        public class ApplicationUser : IdentityUser { public DateTime BirthDate { get; set; } };
         public DbSet<Calendar> calendar { get; set; }
         public DbSet <Collection> collection { get; set; }
         public DbSet <Collection_Calendar> collection_Calendar{ get; set; }
