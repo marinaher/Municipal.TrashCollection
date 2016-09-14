@@ -251,6 +251,10 @@
     <Compile Include="Migrations\201609140439202_added additional controllers.Designer.cs">
       <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609141718321_added street to address class.cs" />
+    <Compile Include="Migrations\201609141718321_added street to address class.Designer.cs">
+      <DependentUpon>201609141718321_added street to address class.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -420,6 +424,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609140439202_added additional controllers.resx">
       <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609141718321_added street to address class.resx">
+      <DependentUpon>201609141718321_added street to address class.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

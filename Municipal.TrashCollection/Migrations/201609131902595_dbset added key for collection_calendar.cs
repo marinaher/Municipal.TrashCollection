@@ -66,16 +66,18 @@ namespace Municipal.TrashCollection.Migrations
                         Password = c.String(),
                     })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
-                "dbo.Routes",
-                c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        RouteZipCode = c.Int(nullable: false),
-                    })
-                .PrimaryKey(t => t.ID);
-            
+               "dbo.Routes",
+               c => new
+               {
+                   ID = c.Int(nullable: false, identity: true),
+                   RouteZipCode = c.Int(nullable: false),
+                   AddressID = c.Int(nullable: false),
+               })
+               .PrimaryKey(t => t.ID)
+               .ForeignKey("dbo.Addresses", t => t.AddressID, cascadeDelete: false)
+               .Index(t => t.AddressID);
         }
         
         public override void Down()

@@ -180,3 +180,8 @@ C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.Tras
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.updatepaypal.resources
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionaldbset.resources
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalcontrollers.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalclasses.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.updatepaypal.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionaldbset.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalcontrollers.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedstreettoaddressclass.resources
