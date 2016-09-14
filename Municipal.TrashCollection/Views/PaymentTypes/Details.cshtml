@@ -1,0 +1,42 @@
+﻿@model Municipal.TrashCollection.Models.PaymentType
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PaymentType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CreditCard.CardHolderName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreditCard.CardHolderName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PayPal.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PayPal.ID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalAmount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalAmount)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

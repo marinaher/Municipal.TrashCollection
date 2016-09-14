@@ -196,13 +196,17 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\CalendarsController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\Collection_CalendarController.cs" />
     <Compile Include="Controllers\CompaniesController.cs" />
+    <Compile Include="Controllers\CreditCardController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PaymentTypesController.cs" />
+    <Compile Include="Controllers\PayPalController.cs" />
     <Compile Include="Controllers\RoutesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -231,6 +235,22 @@
     <Compile Include="Migrations\201609132224131_added address.Designer.cs">
       <DependentUpon>201609132224131_added address.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609140412019_added additional classes.cs" />
+    <Compile Include="Migrations\201609140412019_added additional classes.Designer.cs">
+      <DependentUpon>201609140412019_added additional classes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609140428420_update paypal.cs" />
+    <Compile Include="Migrations\201609140428420_update paypal.Designer.cs">
+      <DependentUpon>201609140428420_update paypal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609140434288_added additional dbset.cs" />
+    <Compile Include="Migrations\201609140434288_added additional dbset.Designer.cs">
+      <DependentUpon>201609140434288_added additional dbset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609140439202_added additional controllers.cs" />
+    <Compile Include="Migrations\201609140439202_added additional controllers.Designer.cs">
+      <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -238,9 +258,12 @@
     <Compile Include="Models\Collection.cs" />
     <Compile Include="Models\Collection_Calendar.cs" />
     <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\CreditCard.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PaymentType.cs" />
+    <Compile Include="Models\PayPal.cs" />
     <Compile Include="Models\Route.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -335,6 +358,26 @@
     <Content Include="Views\Routes\Details.cshtml" />
     <Content Include="Views\Routes\Edit.cshtml" />
     <Content Include="Views\Routes\Index.cshtml" />
+    <Content Include="Views\PaymentTypes\Create.cshtml" />
+    <Content Include="Views\PaymentTypes\Delete.cshtml" />
+    <Content Include="Views\PaymentTypes\Details.cshtml" />
+    <Content Include="Views\PaymentTypes\Edit.cshtml" />
+    <Content Include="Views\PaymentTypes\Index.cshtml" />
+    <Content Include="Views\PayPal\Create.cshtml" />
+    <Content Include="Views\PayPal\Delete.cshtml" />
+    <Content Include="Views\PayPal\Details.cshtml" />
+    <Content Include="Views\PayPal\Edit.cshtml" />
+    <Content Include="Views\PayPal\Index.cshtml" />
+    <Content Include="Views\CreditCard\Create.cshtml" />
+    <Content Include="Views\CreditCard\Delete.cshtml" />
+    <Content Include="Views\CreditCard\Details.cshtml" />
+    <Content Include="Views\CreditCard\Edit.cshtml" />
+    <Content Include="Views\CreditCard\Index.cshtml" />
+    <Content Include="Views\Address\Create.cshtml" />
+    <Content Include="Views\Address\Delete.cshtml" />
+    <Content Include="Views\Address\Details.cshtml" />
+    <Content Include="Views\Address\Edit.cshtml" />
+    <Content Include="Views\Address\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -365,6 +408,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609132224131_added address.resx">
       <DependentUpon>201609132224131_added address.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609140412019_added additional classes.resx">
+      <DependentUpon>201609140412019_added additional classes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609140428420_update paypal.resx">
+      <DependentUpon>201609140428420_update paypal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609140434288_added additional dbset.resx">
+      <DependentUpon>201609140434288_added additional dbset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609140439202_added additional controllers.resx">
+      <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -37,6 +37,10 @@ namespace Municipal.TrashCollection.Models
         public DbSet <Company> company { get; set; }
         public DbSet <Employee> employee { get; set; }
         public DbSet <Route> route { get; set; }
+        public DbSet<PayPal> payPal { get; set; }
+        public DbSet<Address> address { get; set; }
+        public DbSet<CreditCard> creditCard { get; set; }
+        public DbSet<PaymentType> paymentType { get; set; }
 
     }
 }
