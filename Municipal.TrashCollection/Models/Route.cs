@@ -12,8 +12,9 @@ namespace Municipal.TrashCollection.Models
         [Key]
         public int ID { get; set; }
         public int RouteZipCode { get; set; }
-        [ForeignKey("Address")]
-        public int AddressID { get; set; }
-        public virtual Address Address { get; set; }
+
+        //[ForeignKey("Address")]
+        //public int AddressID { get; set; }
+        //public virtual Address Address { get; set; }
     }
 }
