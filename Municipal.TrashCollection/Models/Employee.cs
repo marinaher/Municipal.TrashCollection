@@ -17,10 +17,6 @@ namespace Municipal.TrashCollection.Models
         public DateTime DOB { get; set; }
         public bool IsActive { get; set; }
 
-        [ForeignKey("Company")]
-        public int CompanyID { get; set; }
-        public virtual Company Company { get; set; }
-
         [ForeignKey("Collection")]
         public int CollectionID { get; set; }
         public virtual Collection Collection { get; set; }

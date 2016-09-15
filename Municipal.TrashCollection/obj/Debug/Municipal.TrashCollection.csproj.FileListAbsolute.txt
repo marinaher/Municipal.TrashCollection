@@ -79,14 +79,6 @@ C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Mu
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.dll
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.pdb
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csprojResolveAssemblyReference.cache
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.save.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csproj.GenerateResource.Cache
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.dbsetaddedkeyforcollection_calendar.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedcontrollers.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedforeignkeys.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.Birthdate.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedaddress.resources
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\bin\ApplicationInsights.config
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csc.exe
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -180,11 +172,6 @@ C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.Tras
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.updatepaypal.resources
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionaldbset.resources
 C:\Users\Sheng\Documents\Sheng\MyGitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalcontrollers.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalclasses.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.updatepaypal.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionaldbset.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalcontrollers.resources
-C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedstreettoaddressclass.resources
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csc.exe.config
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csc.rsp
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csi.exe
@@ -199,3 +186,6 @@ C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Mu
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\vbc.exe.config
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\vbc.rsp
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csprojResolveAssemblyReference.cache
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.Reset.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csproj.GenerateResource.Cache

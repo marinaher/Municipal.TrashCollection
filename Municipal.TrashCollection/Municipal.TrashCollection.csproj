@@ -201,7 +201,6 @@
     <Compile Include="Controllers\CalendarsController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\Collection_CalendarController.cs" />
-    <Compile Include="Controllers\CompaniesController.cs" />
     <Compile Include="Controllers\CreditCardController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -212,49 +211,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609131839445_save.cs" />
-    <Compile Include="Migrations\201609131839445_save.Designer.cs">
-      <DependentUpon>201609131839445_save.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609131902595_dbset added key for collection_calendar.cs" />
-    <Compile Include="Migrations\201609131902595_dbset added key for collection_calendar.Designer.cs">
-      <DependentUpon>201609131902595_dbset added key for collection_calendar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609131914425_added controllers.cs" />
-    <Compile Include="Migrations\201609131914425_added controllers.Designer.cs">
-      <DependentUpon>201609131914425_added controllers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609131949008_added foreign keys.cs" />
-    <Compile Include="Migrations\201609131949008_added foreign keys.Designer.cs">
-      <DependentUpon>201609131949008_added foreign keys.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609132030579_Birthdate.cs" />
-    <Compile Include="Migrations\201609132030579_Birthdate.Designer.cs">
-      <DependentUpon>201609132030579_Birthdate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609132224131_added address.cs" />
-    <Compile Include="Migrations\201609132224131_added address.Designer.cs">
-      <DependentUpon>201609132224131_added address.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609140412019_added additional classes.cs" />
-    <Compile Include="Migrations\201609140412019_added additional classes.Designer.cs">
-      <DependentUpon>201609140412019_added additional classes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609140428420_update paypal.cs" />
-    <Compile Include="Migrations\201609140428420_update paypal.Designer.cs">
-      <DependentUpon>201609140428420_update paypal.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609140434288_added additional dbset.cs" />
-    <Compile Include="Migrations\201609140434288_added additional dbset.Designer.cs">
-      <DependentUpon>201609140434288_added additional dbset.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609140439202_added additional controllers.cs" />
-    <Compile Include="Migrations\201609140439202_added additional controllers.Designer.cs">
-      <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609141718321_added street to address class.cs" />
-    <Compile Include="Migrations\201609141718321_added street to address class.Designer.cs">
-      <DependentUpon>201609141718321_added street to address class.cs</DependentUpon>
+    <Compile Include="Migrations\201609151735084_Reset.cs" />
+    <Compile Include="Migrations\201609151735084_Reset.Designer.cs">
+      <DependentUpon>201609151735084_Reset.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -262,7 +221,6 @@
     <Compile Include="Models\Calendar.cs" />
     <Compile Include="Models\Collection.cs" />
     <Compile Include="Models\Collection_Calendar.cs" />
-    <Compile Include="Models\Company.cs" />
     <Compile Include="Models\CreditCard.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -576,38 +534,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201609131839445_save.resx">
-      <DependentUpon>201609131839445_save.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609131902595_dbset added key for collection_calendar.resx">
-      <DependentUpon>201609131902595_dbset added key for collection_calendar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609131914425_added controllers.resx">
-      <DependentUpon>201609131914425_added controllers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609131949008_added foreign keys.resx">
-      <DependentUpon>201609131949008_added foreign keys.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609132030579_Birthdate.resx">
-      <DependentUpon>201609132030579_Birthdate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609132224131_added address.resx">
-      <DependentUpon>201609132224131_added address.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609140412019_added additional classes.resx">
-      <DependentUpon>201609140412019_added additional classes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609140428420_update paypal.resx">
-      <DependentUpon>201609140428420_update paypal.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609140434288_added additional dbset.resx">
-      <DependentUpon>201609140434288_added additional dbset.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609140439202_added additional controllers.resx">
-      <DependentUpon>201609140439202_added additional controllers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609141718321_added street to address class.resx">
-      <DependentUpon>201609141718321_added street to address class.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609151735084_Reset.resx">
+      <DependentUpon>201609151735084_Reset.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
