@@ -185,3 +185,17 @@ C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Mu
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionaldbset.resources
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedadditionalcontrollers.resources
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedstreettoaddressclass.resources
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csc.exe.config
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csc.rsp
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csi.exe
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\csi.rsp
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\System.AppContext.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\vbc.exe.config
+C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\bin\roslyn\vbc.rsp
