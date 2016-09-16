@@ -208,6 +208,14 @@
     <Compile Include="Migrations\201609151735084_Reset.Designer.cs">
       <DependentUpon>201609151735084_Reset.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609161309534_added to registration.cs" />
+    <Compile Include="Migrations\201609161309534_added to registration.Designer.cs">
+      <DependentUpon>201609161309534_added to registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609161315197_save.cs" />
+    <Compile Include="Migrations\201609161315197_save.Designer.cs">
+      <DependentUpon>201609161315197_save.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -483,11 +491,6 @@
     <Content Include="Views\Collection_Calendar\Details.cshtml" />
     <Content Include="Views\Collection_Calendar\Edit.cshtml" />
     <Content Include="Views\Collection_Calendar\Index.cshtml" />
-    <Content Include="Views\Companies\Create.cshtml" />
-    <Content Include="Views\Companies\Delete.cshtml" />
-    <Content Include="Views\Companies\Details.cshtml" />
-    <Content Include="Views\Companies\Edit.cshtml" />
-    <Content Include="Views\Companies\Index.cshtml" />
     <Content Include="Views\Employees\Create.cshtml" />
     <Content Include="Views\Employees\Delete.cshtml" />
     <Content Include="Views\Employees\Details.cshtml" />
@@ -529,6 +532,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201609151735084_Reset.resx">
       <DependentUpon>201609151735084_Reset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609161309534_added to registration.resx">
+      <DependentUpon>201609161309534_added to registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609161315197_save.resx">
+      <DependentUpon>201609161315197_save.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
