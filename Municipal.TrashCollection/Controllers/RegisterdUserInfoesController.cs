@@ -10,107 +10,107 @@ using Municipal.TrashCollection.Models;
 
 namespace Municipal.TrashCollection.Controllers
 {
-    public class AddressController : Controller
+    public class RegisterdUserInfoesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Address
+        // GET: RegisterdUserInfoes
         public ActionResult Index()
         {
-            return View(db.address.ToList());
+            return View(db.RegisterdUserInfoes.ToList());
         }
 
-        // GET: Address/Details/5
+        // GET: RegisterdUserInfoes/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Address address = db.address.Find(id);
-            if (address == null)
+            RegisterdUserInfo registerdUserInfo = db.RegisterdUserInfoes.Find(id);
+            if (registerdUserInfo == null)
             {
                 return HttpNotFound();
             }
-            return View(address);
+            return View(registerdUserInfo);
         }
 
-        // GET: Address/Create
+        // GET: RegisterdUserInfoes/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Address/Create
+        // POST: RegisterdUserInfoes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Street,ApartmentNumber,City,State,ZipCode")] Address address)
+        public ActionResult Create([Bind(Include = "ID,PickupDay,MonthlyBill,AnnualBill,TotalBill")] RegisterdUserInfo registerdUserInfo)
         {
             if (ModelState.IsValid)
             {
-                db.address.Add(address);
+                db.RegisterdUserInfoes.Add(registerdUserInfo);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(address);
+            return View(registerdUserInfo);
         }
 
-        // GET: Address/Edit/5
+        // GET: RegisterdUserInfoes/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Address address = db.address.Find(id);
-            if (address == null)
+            RegisterdUserInfo registerdUserInfo = db.RegisterdUserInfoes.Find(id);
+            if (registerdUserInfo == null)
             {
                 return HttpNotFound();
             }
-            return View(address);
+            return View(registerdUserInfo);
         }
 
-        // POST: Address/Edit/5
+        // POST: RegisterdUserInfoes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Street,ApartmentNumber,City,State,ZipCode")] Address address)
+        public ActionResult Edit([Bind(Include = "ID,PickupDay,MonthlyBill,AnnualBill,TotalBill")] RegisterdUserInfo registerdUserInfo)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(address).State = EntityState.Modified;
+                db.Entry(registerdUserInfo).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(address);
+            return View(registerdUserInfo);
         }
 
-        // GET: Address/Delete/5
+        // GET: RegisterdUserInfoes/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Address address = db.address.Find(id);
-            if (address == null)
+            RegisterdUserInfo registerdUserInfo = db.RegisterdUserInfoes.Find(id);
+            if (registerdUserInfo == null)
             {
                 return HttpNotFound();
             }
-            return View(address);
+            return View(registerdUserInfo);
         }
 
-        // POST: Address/Delete/5
+        // POST: RegisterdUserInfoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Address address = db.address.Find(id);
-            db.address.Remove(address);
+            RegisterdUserInfo registerdUserInfo = db.RegisterdUserInfoes.Find(id);
+            db.RegisterdUserInfoes.Remove(registerdUserInfo);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

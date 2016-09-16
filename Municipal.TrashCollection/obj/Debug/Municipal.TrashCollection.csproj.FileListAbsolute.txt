@@ -281,3 +281,6 @@ C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollect
 C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.pdb
 C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedtoregistration.resources
 C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.save.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.save1.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.save2.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.save3.resources

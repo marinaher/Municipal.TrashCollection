@@ -1,0 +1,50 @@
+﻿@model Municipal.TrashCollection.Models.RegisterdUserInfo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>RegisterdUserInfo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PickupDay)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PickupDay)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MonthlyBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MonthlyBill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AnnualBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AnnualBill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalBill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalBill)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
