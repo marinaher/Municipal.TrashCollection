@@ -19,12 +19,12 @@
                 </button>
                 @Html.ActionLink("Municipal Trash Collection", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            @*<div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+                </ul>*@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -33,7 +33,8 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Municipal Trash Collection</p>
+            <p>Please click @Html.ActionLink("Contact", "Contact", "Home") to get in touch with us.</p>
+            <p style="float:right">&copy; @DateTime.Now.Year - Municipal Trash Collection</p>
         </footer>
     </div>
 
