@@ -51,5 +51,6 @@ namespace Municipal.TrashCollection.Models
         public DbSet<CreditCard> creditCard { get; set; }
         public DbSet<PaymentType> paymentType { get; set; }
 
+        public System.Data.Entity.DbSet<Municipal.TrashCollection.Models.RegisterdUserInfo> RegisterdUserInfoes { get; set; }
     }
 }

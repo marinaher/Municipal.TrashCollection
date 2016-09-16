@@ -200,6 +200,7 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PaymentTypesController.cs" />
     <Compile Include="Controllers\PayPalController.cs" />
+    <Compile Include="Controllers\RegisterdUserInfoesController.cs" />
     <Compile Include="Controllers\RoutesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -216,6 +217,18 @@
     <Compile Include="Migrations\201609161315197_save.Designer.cs">
       <DependentUpon>201609161315197_save.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609161350576_save1.cs" />
+    <Compile Include="Migrations\201609161350576_save1.Designer.cs">
+      <DependentUpon>201609161350576_save1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609161412406_save2.cs" />
+    <Compile Include="Migrations\201609161412406_save2.Designer.cs">
+      <DependentUpon>201609161412406_save2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609161433198_save3.cs" />
+    <Compile Include="Migrations\201609161433198_save3.Designer.cs">
+      <DependentUpon>201609161433198_save3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -228,6 +241,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\PaymentType.cs" />
     <Compile Include="Models\PayPal.cs" />
+    <Compile Include="Models\RegisterdUserInfo.cs" />
     <Compile Include="Models\Route.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -521,6 +535,11 @@
     <Content Include="Views\Address\Details.cshtml" />
     <Content Include="Views\Address\Edit.cshtml" />
     <Content Include="Views\Address\Index.cshtml" />
+    <Content Include="Views\RegisterdUserInfoes\Create.cshtml" />
+    <Content Include="Views\RegisterdUserInfoes\Delete.cshtml" />
+    <Content Include="Views\RegisterdUserInfoes\Details.cshtml" />
+    <Content Include="Views\RegisterdUserInfoes\Edit.cshtml" />
+    <Content Include="Views\RegisterdUserInfoes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -538,6 +557,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609161315197_save.resx">
       <DependentUpon>201609161315197_save.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609161350576_save1.resx">
+      <DependentUpon>201609161350576_save1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609161412406_save2.resx">
+      <DependentUpon>201609161412406_save2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609161433198_save3.resx">
+      <DependentUpon>201609161433198_save3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
