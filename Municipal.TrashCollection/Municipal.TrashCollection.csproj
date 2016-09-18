@@ -229,6 +229,22 @@
     <Compile Include="Migrations\201609161433198_save3.Designer.cs">
       <DependentUpon>201609161433198_save3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609180020048_add website style sheet.cs" />
+    <Compile Include="Migrations\201609180020048_add website style sheet.Designer.cs">
+      <DependentUpon>201609180020048_add website style sheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609180038265_updated site cs.cs" />
+    <Compile Include="Migrations\201609180038265_updated site cs.Designer.cs">
+      <DependentUpon>201609180038265_updated site cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609180043192_add hover color chng to navbar title.cs" />
+    <Compile Include="Migrations\201609180043192_add hover color chng to navbar title.Designer.cs">
+      <DependentUpon>201609180043192_add hover color chng to navbar title.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609180122120_chnged button color.cs" />
+    <Compile Include="Migrations\201609180122120_chnged button color.Designer.cs">
+      <DependentUpon>201609180122120_chnged button color.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -566,6 +582,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609161433198_save3.resx">
       <DependentUpon>201609161433198_save3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609180020048_add website style sheet.resx">
+      <DependentUpon>201609180020048_add website style sheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609180038265_updated site cs.resx">
+      <DependentUpon>201609180038265_updated site cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609180043192_add hover color chng to navbar title.resx">
+      <DependentUpon>201609180043192_add hover color chng to navbar title.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609180122120_chnged button color.resx">
+      <DependentUpon>201609180122120_chnged button color.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
