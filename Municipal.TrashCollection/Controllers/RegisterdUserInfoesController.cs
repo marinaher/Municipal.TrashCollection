@@ -17,7 +17,7 @@ namespace Municipal.TrashCollection.Controllers
         // GET: RegisterdUserInfoes
         public ActionResult Index()
         {
-            ViewBag.calendar = db.calendar.Select(x => x.StartDate).Distinct().ToList();
+            //ViewBag. = db.calendar.Select(x => x.StartDate).Distinct().ToList();
             return View(db.RegisterdUserInfoes.ToList());
         }
 
@@ -47,7 +47,7 @@ namespace Municipal.TrashCollection.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,PickupDay,MonthlyBill,AnnualBill,TotalBill")] RegisterdUserInfo registerdUserInfo)
+        public ActionResult Create([Bind(Include = "ID,PickupDay,MonthlyBill")] RegisterdUserInfo registerdUserInfo)
         {
             if (ModelState.IsValid)
             {
@@ -79,7 +79,7 @@ namespace Municipal.TrashCollection.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,PickupDay,MonthlyBill,AnnualBill,TotalBill")] RegisterdUserInfo registerdUserInfo)
+        public ActionResult Edit([Bind(Include = "ID,PickupDay,MonthlyBill")] RegisterdUserInfo registerdUserInfo)
         {
             if (ModelState.IsValid)
             {

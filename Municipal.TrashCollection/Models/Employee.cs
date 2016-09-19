@@ -16,17 +16,6 @@ namespace Municipal.TrashCollection.Models
         public string UserID { get; set; }
         public ApplicationUser ApplicationUser { get; set; }
 
-        //[Display(Name = "Employee ID")]
-        //public int EmployeeID { get; set; }
-
-        //[Display(Name = "Is Active")]
-        //public bool IsActive { get; set; }
-
-        //[ForeignKey("Route")]
-        //[Display(Name = "Route ID")]
-        //public int RouteID { get; set; }
-        //public virtual Route Route { get; set; }
-
         public int RouteNumber { get; set; }
     }
 }

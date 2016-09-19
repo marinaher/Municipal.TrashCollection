@@ -53,7 +53,6 @@ namespace Municipal.TrashCollection.Models
             return new ApplicationDbContext();
         }
         public class ApplicationUser : IdentityUser { public DateTime BirthDate { get; set; } };
-        public DbSet<Calendar> calendar { get; set; }
         public DbSet <Employee> employee { get; set; }
         public DbSet <Route> route { get; set; }
         public DbSet<Address> address { get; set; }

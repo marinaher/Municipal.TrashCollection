@@ -191,7 +191,6 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AddressController.cs" />
-    <Compile Include="Controllers\CalendarsController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -201,42 +200,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609190913511_reset.cs" />
-    <Compile Include="Migrations\201609190913511_reset.Designer.cs">
-      <DependentUpon>201609190913511_reset.cs</DependentUpon>
+    <Compile Include="Migrations\201609191618207_reset.cs" />
+    <Compile Include="Migrations\201609191618207_reset.Designer.cs">
+      <DependentUpon>201609191618207_reset.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609190926171_adding ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201609190926171_adding ApplicationDbContext.Designer.cs">
-      <DependentUpon>201609190926171_adding ApplicationDbContext.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609190934023_added registered user.cs" />
-    <Compile Include="Migrations\201609190934023_added registered user.Designer.cs">
-      <DependentUpon>201609190934023_added registered user.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609191001385_added datepicker.cs" />
-    <Compile Include="Migrations\201609191001385_added datepicker.Designer.cs">
-      <DependentUpon>201609191001385_added datepicker.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609191251367_added current user to resterduserinfo.cs" />
-    <Compile Include="Migrations\201609191251367_added current user to resterduserinfo.Designer.cs">
-      <DependentUpon>201609191251367_added current user to resterduserinfo.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609191402251_add pickup day model.cs" />
-    <Compile Include="Migrations\201609191402251_add pickup day model.Designer.cs">
-      <DependentUpon>201609191402251_add pickup day model.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609191406320_added to pickupdays contrller.cs" />
-    <Compile Include="Migrations\201609191406320_added to pickupdays contrller.Designer.cs">
-      <DependentUpon>201609191406320_added to pickupdays contrller.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609191437471_cascade true chnged to false.cs" />
-    <Compile Include="Migrations\201609191437471_cascade true chnged to false.Designer.cs">
-      <DependentUpon>201609191437471_cascade true chnged to false.cs</DependentUpon>
+    <Compile Include="Migrations\201609192053501_major updates.cs" />
+    <Compile Include="Migrations\201609192053501_major updates.Designer.cs">
+      <DependentUpon>201609192053501_major updates.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
-    <Compile Include="Models\Calendar.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -492,11 +466,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Calendars\Create.cshtml" />
-    <Content Include="Views\Calendars\Delete.cshtml" />
-    <Content Include="Views\Calendars\Details.cshtml" />
-    <Content Include="Views\Calendars\Edit.cshtml" />
-    <Content Include="Views\Calendars\Index.cshtml" />
     <Content Include="Views\Employees\Create.cshtml" />
     <Content Include="Views\Employees\Delete.cshtml" />
     <Content Include="Views\Employees\Details.cshtml" />
@@ -531,29 +500,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201609190913511_reset.resx">
-      <DependentUpon>201609190913511_reset.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609191618207_reset.resx">
+      <DependentUpon>201609191618207_reset.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609190926171_adding ApplicationDbContext.resx">
-      <DependentUpon>201609190926171_adding ApplicationDbContext.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609190934023_added registered user.resx">
-      <DependentUpon>201609190934023_added registered user.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609191001385_added datepicker.resx">
-      <DependentUpon>201609191001385_added datepicker.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609191251367_added current user to resterduserinfo.resx">
-      <DependentUpon>201609191251367_added current user to resterduserinfo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609191402251_add pickup day model.resx">
-      <DependentUpon>201609191402251_add pickup day model.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609191406320_added to pickupdays contrller.resx">
-      <DependentUpon>201609191406320_added to pickupdays contrller.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609191437471_cascade true chnged to false.resx">
-      <DependentUpon>201609191437471_cascade true chnged to false.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609192053501_major updates.resx">
+      <DependentUpon>201609192053501_major updates.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

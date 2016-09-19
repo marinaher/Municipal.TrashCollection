@@ -7,13 +7,13 @@ namespace Municipal.TrashCollection.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addedregistereduser : IMigrationMetadata
+    public sealed partial class reset : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedregistereduser));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(reset));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609190934023_added registered user"; }
+            get { return "201609191618207_reset"; }
         }
         
         string IMigrationMetadata.Source
