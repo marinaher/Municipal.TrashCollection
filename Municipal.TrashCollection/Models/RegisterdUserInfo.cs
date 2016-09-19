@@ -18,5 +18,7 @@ namespace Municipal.TrashCollection.Models
         [DataType(DataType.Currency)]
         [Display(Name = "Monthly Bill")]
         public double MonthlyBill { get; set; }
+
+        public ApplicationUser currentUser { get; set; }
     }
 }

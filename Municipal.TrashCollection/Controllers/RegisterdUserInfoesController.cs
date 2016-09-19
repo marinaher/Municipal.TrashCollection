@@ -17,6 +17,7 @@ namespace Municipal.TrashCollection.Controllers
         // GET: RegisterdUserInfoes
         public ActionResult Index()
         {
+            ViewBag.calendar = db.calendar.Select(x => x.StartDate).Distinct().ToList();
             return View(db.RegisterdUserInfoes.ToList());
         }
 

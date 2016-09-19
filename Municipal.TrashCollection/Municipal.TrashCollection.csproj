@@ -195,6 +195,7 @@
     <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PickUpDaysController.cs" />
     <Compile Include="Controllers\RegisterdUserInfoesController.cs" />
     <Compile Include="Controllers\RoutesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -216,6 +217,22 @@
     <Compile Include="Migrations\201609191001385_added datepicker.Designer.cs">
       <DependentUpon>201609191001385_added datepicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609191251367_added current user to resterduserinfo.cs" />
+    <Compile Include="Migrations\201609191251367_added current user to resterduserinfo.Designer.cs">
+      <DependentUpon>201609191251367_added current user to resterduserinfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191402251_add pickup day model.cs" />
+    <Compile Include="Migrations\201609191402251_add pickup day model.Designer.cs">
+      <DependentUpon>201609191402251_add pickup day model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191406320_added to pickupdays contrller.cs" />
+    <Compile Include="Migrations\201609191406320_added to pickupdays contrller.Designer.cs">
+      <DependentUpon>201609191406320_added to pickupdays contrller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609191437471_cascade true chnged to false.cs" />
+    <Compile Include="Migrations\201609191437471_cascade true chnged to false.Designer.cs">
+      <DependentUpon>201609191437471_cascade true chnged to false.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -223,6 +240,7 @@
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\PickUpDay.cs" />
     <Compile Include="Models\RegisterdUserInfo.cs" />
     <Compile Include="Models\Route.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -499,6 +517,11 @@
     <Content Include="Views\RegisterdUserInfoes\Details.cshtml" />
     <Content Include="Views\RegisterdUserInfoes\Edit.cshtml" />
     <Content Include="Views\RegisterdUserInfoes\Index.cshtml" />
+    <Content Include="Views\PickUpDays\Create.cshtml" />
+    <Content Include="Views\PickUpDays\Delete.cshtml" />
+    <Content Include="Views\PickUpDays\Details.cshtml" />
+    <Content Include="Views\PickUpDays\Edit.cshtml" />
+    <Content Include="Views\PickUpDays\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -519,6 +542,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609191001385_added datepicker.resx">
       <DependentUpon>201609191001385_added datepicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191251367_added current user to resterduserinfo.resx">
+      <DependentUpon>201609191251367_added current user to resterduserinfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191402251_add pickup day model.resx">
+      <DependentUpon>201609191402251_add pickup day model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191406320_added to pickupdays contrller.resx">
+      <DependentUpon>201609191406320_added to pickupdays contrller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609191437471_cascade true chnged to false.resx">
+      <DependentUpon>201609191437471_cascade true chnged to false.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

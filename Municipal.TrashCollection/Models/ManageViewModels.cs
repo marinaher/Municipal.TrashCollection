@@ -30,11 +30,10 @@ namespace Municipal.TrashCollection.Models
         public string ZipCode { get; set; }
 
         [Display(Name = "Pickup Day")]
+        public string PickupDay { get; set; }
 
         public ApplicationUser currentUser { get; set; }
         public virtual RegisterdUserInfo RegisteredUser { get; set; }
-
-        public string PickupDay { get; set; }
 
         public bool IsOnVacation { get; set; }
 

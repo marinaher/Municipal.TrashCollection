@@ -18,10 +18,10 @@ namespace Municipal.TrashCollection.Models
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
 
-        [ForeignKey("Employee")]
-        [Display(Name = "Employee ID")]
-        public int? Employee_id { get; set; }
-        public Employee Employee { get; set; }
+        //[ForeignKey("Employee")]
+        //[Display(Name = "Employee ID")]
+        //public int? Employee_id { get; set; }
+        //public Employee Employee { get; set; }
 
         [ForeignKey("Address")]
         [Display(Name = "Address ID")]
@@ -58,5 +58,7 @@ namespace Municipal.TrashCollection.Models
         public DbSet <Route> route { get; set; }
         public DbSet<Address> address { get; set; }
         public DbSet<RegisterdUserInfo> RegisterdUserInfoes { get; set; }
+
+        public DbSet<PickUpDay> PickUpDays { get; set; }
     }
 }
