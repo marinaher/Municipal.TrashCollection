@@ -7,13 +7,13 @@ namespace Municipal.TrashCollection.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class addedtoregistration : IMigrationMetadata
+    public sealed partial class addedgooglemap : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addedtoregistration));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addedgooglemap));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609161309534_added to registration"; }
+            get { return "201609182258571_added google map"; }
         }
         
         string IMigrationMetadata.Source

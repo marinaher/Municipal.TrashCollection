@@ -205,45 +205,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609151735084_Reset.cs" />
-    <Compile Include="Migrations\201609151735084_Reset.Designer.cs">
-      <DependentUpon>201609151735084_Reset.cs</DependentUpon>
+    <Compile Include="Migrations\201609182242266_migration errors - reset migrations.cs" />
+    <Compile Include="Migrations\201609182242266_migration errors - reset migrations.Designer.cs">
+      <DependentUpon>201609182242266_migration errors - reset migrations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201609161309534_added to registration.cs" />
-    <Compile Include="Migrations\201609161309534_added to registration.Designer.cs">
-      <DependentUpon>201609161309534_added to registration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609161315197_save.cs" />
-    <Compile Include="Migrations\201609161315197_save.Designer.cs">
-      <DependentUpon>201609161315197_save.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609161350576_save1.cs" />
-    <Compile Include="Migrations\201609161350576_save1.Designer.cs">
-      <DependentUpon>201609161350576_save1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609161412406_save2.cs" />
-    <Compile Include="Migrations\201609161412406_save2.Designer.cs">
-      <DependentUpon>201609161412406_save2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609161433198_save3.cs" />
-    <Compile Include="Migrations\201609161433198_save3.Designer.cs">
-      <DependentUpon>201609161433198_save3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609180020048_add website style sheet.cs" />
-    <Compile Include="Migrations\201609180020048_add website style sheet.Designer.cs">
-      <DependentUpon>201609180020048_add website style sheet.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609180038265_updated site cs.cs" />
-    <Compile Include="Migrations\201609180038265_updated site cs.Designer.cs">
-      <DependentUpon>201609180038265_updated site cs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609180043192_add hover color chng to navbar title.cs" />
-    <Compile Include="Migrations\201609180043192_add hover color chng to navbar title.Designer.cs">
-      <DependentUpon>201609180043192_add hover color chng to navbar title.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201609180122120_chnged button color.cs" />
-    <Compile Include="Migrations\201609180122120_chnged button color.Designer.cs">
-      <DependentUpon>201609180122120_chnged button color.cs</DependentUpon>
+    <Compile Include="Migrations\201609182258571_added google map.cs" />
+    <Compile Include="Migrations\201609182258571_added google map.Designer.cs">
+      <DependentUpon>201609182258571_added google map.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -565,35 +533,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201609151735084_Reset.resx">
-      <DependentUpon>201609151735084_Reset.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609182242266_migration errors - reset migrations.resx">
+      <DependentUpon>201609182242266_migration errors - reset migrations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609161309534_added to registration.resx">
-      <DependentUpon>201609161309534_added to registration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609161315197_save.resx">
-      <DependentUpon>201609161315197_save.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609161350576_save1.resx">
-      <DependentUpon>201609161350576_save1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609161412406_save2.resx">
-      <DependentUpon>201609161412406_save2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609161433198_save3.resx">
-      <DependentUpon>201609161433198_save3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609180020048_add website style sheet.resx">
-      <DependentUpon>201609180020048_add website style sheet.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609180038265_updated site cs.resx">
-      <DependentUpon>201609180038265_updated site cs.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609180043192_add hover color chng to navbar title.resx">
-      <DependentUpon>201609180043192_add hover color chng to navbar title.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201609180122120_chnged button color.resx">
-      <DependentUpon>201609180122120_chnged button color.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201609182258571_added google map.resx">
+      <DependentUpon>201609182258571_added google map.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

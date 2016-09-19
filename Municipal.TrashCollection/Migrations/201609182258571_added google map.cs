@@ -3,7 +3,7 @@ namespace Municipal.TrashCollection.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class save3 : DbMigration
+    public partial class addedgooglemap : DbMigration
     {
         public override void Up()
         {

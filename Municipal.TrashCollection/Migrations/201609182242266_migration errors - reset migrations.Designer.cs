@@ -7,13 +7,13 @@ namespace Municipal.TrashCollection.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class save2 : IMigrationMetadata
+    public sealed partial class migrationerrorsresetmigrations : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(save2));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(migrationerrorsresetmigrations));
         
         string IMigrationMetadata.Id
         {
-            get { return "201609161412406_save2"; }
+            get { return "201609182242266_migration errors - reset migrations"; }
         }
         
         string IMigrationMetadata.Source
