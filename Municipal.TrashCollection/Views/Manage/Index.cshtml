@@ -7,9 +7,110 @@
 
 <p class="text-success">@ViewBag.StatusMessage</p>
 
+<div class="row">
+    <div class="form-group buttons">
+        <div class="col-md-10">
+            @if (User.Identity.Name != null)
+            {
+                <a href="@Url.Action("Edit","Customers")"><input class="btn btn-default btn-sm" value="Update Profile" id="profileUpdate" /></a>
+            }
+            else
+            {
+                <a href="@Url.Action("Create","Customers")"><input class="btn btn-default btn-sm" value="Enter Profile Information" id="profileUpdate" /></a>
+            }
+            <a href="@Url.Action("ChangePickupDay","PickupDay")"><input class="btn btn-default btn-sm" value="Change Pickup Day" /></a>
+        </div>
+    </div>
+</div>
+<br />
+<div class="col-md-5">
+    <div class="manageTable">
+        <table border="0" class="col-sm-7 table-condensed table-hover">
+            <tr>
+                <th>Month</th>
+                <th>Monthly Bill</th>
+                <th>Bill Status</th>
+            </tr>
+            <tr>
+                <td>January</td>
+                <td>$40.00</td>
+                <td id="payJan">Paid</td>
+            </tr>
+            <tr>
+                <td>February</td>
+                <td>$40.00</td>
+                <td id="payFeb">Paid</td>
+            </tr>
+            <tr>
+                <td>March</td>
+                <td>$40.00</td>
+                <td id="payMar">Paid</td>
+            </tr>
+            <tr>
+                <td>April</td>
+                <td>$40.00</td>
+                <td id="payApr">Paid</td>
+            </tr>
+            <tr>
+                <td>May</td>
+                <td>$40.00</td>
+                <td id="payMay">Paid</td>
+            </tr>
+            <tr>
+                <td>June</td>
+                <td>$40.00</td>
+                <td id="payJun">Paid</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>$40.00</td>
+                <td id="payJul">Paid</td>
+            </tr>
+            <tr>
+                <td>August</td>
+                <td>$40.00</td>
+                <td id="payAug">Paid</td>
+            </tr>
+            <tr>
+                <td>September</td>
+                <td>$40.00</td>
+                <td id="paySep">Unpaid</td>
+            </tr>
+            <tr>
+                <td>October</td>
+                <td>$40.00</td>
+                <td id="payOct">Unpaid</td>
+            </tr>
+            <tr>
+                <td>November</td>
+                <td>$40.00</td>
+                <td id="payNov">Unpaid</td>
+            </tr>
+            <tr>
+                <td>December</td>
+                <td>$40.00</td>
+                <td id="payDec">Unpaid</td>
+            </tr>
+            <tr><td></td></tr>
+            <tr><td colspan="3"><b>Please make checks payable to:</b></td></tr>
+            <tr><td colspan="3">Municipal Trash Collection</td></tr>
+            <tr><td colspan="3">Redmond, WA 98052-6399</td></tr>
+        </table>
+
+        <button id="payBtn" class="pull-left btn btn-primary btn-sm" onclick="payButton()">
+            <div id="payButtonMonth">Pay</div>
+        </button>
+    </div>
+</div>
+<div class="col-md-6">
+    <iframe src="https://calendar.google.com/calendar/embed?src=rustykxy%40gmail.com&ctz=America/Chicago" style="border: 0" width="500" height="700" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</div>
+
 <div>
     <div class="row">
-        <span class="col-md-10">
+        <span class="col-sm-5">
             Password:
             [
             @if (Model.HasPassword)
@@ -24,187 +125,92 @@
         </span>
     </div>
 
-    <div class="row">
-        <div class="form-group buttons">
-            <div class="col-md-10">
-                @if (User.Identity.Name != null)
-                {
-                    <a href="@Url.Action("Edit","Customers")"><input class="btn btn-default btn-sm" value="Update Profile" id="profileUpdate" /></a>
-                }
-                else
-                {
-                    <a href="@Url.Action("Create","Customers")"><input class="btn btn-default btn-sm" value="Enter Profile Information" id="profileUpdate" /></a>
-                }
-                <a href="@Url.Action("ChangePickupDay","PickupDay")"><input class="btn btn-default btn-sm" value="Change Pickup Day" /></a>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <div class="manageTable">
-            <table border="0" class="col-md-5 table-condensed table-hover">
-                <tr>
-                    <th>Month</th>
-                    <th>Bill</th>
-                    <th>Pay Bill</th>
-                </tr>
-                <tr>
-                    <td>January</td>
-                    <td>$40.00</td>
-                    <td id="payJan">Paid</td>
-                </tr>
-                <tr>
-                    <td>February</td>
-                    <td>$40.00</td>
-                    <td id="payFeb">Paid</td>
-                </tr>
-                <tr>
-                    <td>March</td>
-                    <td>$40.00</td>
-                    <td id="payMar">Paid</td>
-                </tr>
-                <tr>
-                    <td>April</td>
-                    <td>$40.00</td>
-                    <td id="payApr">Paid</td>
-                </tr>
-                <tr>
-                    <td>May</td>
-                    <td>$40.00</td>
-                    <td id="payMay">Paid</td>
-                </tr>
-                <tr>
-                    <td>June</td>
-                    <td>$40.00</td>
-                    <td id="payJun">Paid</td>
-                </tr>
-                <tr>
-                    <td>July</td>
-                    <td>$40.00</td>
-                    <td id="payJul">Paid</td>
-                </tr>
-                <tr>
-                    <td>August</td>
-                    <td>$40.00</td>
-                    <td id="payAug">Paid</td>
-                </tr>
-                <tr>
-                    <td>September</td>
-                    <td>$40.00</td>
-                    <td id="paySep">Unpaid</td>
-                </tr>
-                <tr>
-                    <td>October</td>
-                    <td>$40.00</td>
-                    <td id="payOct">Unpaid</td>
-                </tr>
-                <tr>
-                    <td>November</td>
-                    <td>$40.00</td>
-                    <td id="payNov">Unpaid</td>
-                </tr>
-                <tr>
-                    <td>December</td>
-                    <td>$40.00</td>
-                    <td id="payDec">Unpaid</td>
-                </tr>
-            </table>
-            <button id="payBtn" class="pull-left btn btn-primary btn-sm" onclick="payButton()">
-                <div id="payButtonMonth">Pay</div>
-            </button>
-        </div>
-    </div>
-    <div class="col-md-6">
-        <iframe src="https://calendar.google.com/calendar/embed?src=rustykxy%40gmail.com&ctz=America/Chicago" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </div>
-
-</div>
-
-<script type="text/javascript">
-    function payButton() {
-        @if (DateTime.Now.Month == 1) {
+    <script type="text/javascript">
+        function payButton() {
+            @if (DateTime.Now.Month == 1) {
         <text>
-        document.getElementById("payJan").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payJan").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 2) {
+            @if (DateTime.Now.Month == 2) {
         <text>
-        document.getElementById("payFeb").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payFeb").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
 
              }
-        @if (DateTime.Now.Month == 3) {
+            @if (DateTime.Now.Month == 3) {
         <text>
-        document.getElementById("payMar").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payMar").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 4) {
+            @if (DateTime.Now.Month == 4) {
         <text>
-        document.getElementById("payApr").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payApr").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 5) {
+            @if (DateTime.Now.Month == 5) {
         <text>
-        document.getElementById("payMay").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payMay").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 6) {
+            @if (DateTime.Now.Month == 6) {
         <text>
-        document.getElementById("payJun").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payJun").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 7) {
+            @if (DateTime.Now.Month == 7) {
         <text>
-        document.getElementById("payJul").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payJul").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 8) {
+            @if (DateTime.Now.Month == 8) {
         <text>
-        document.getElementById("payAug").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payAug").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 9) {
+            @if (DateTime.Now.Month == 9) {
         <text>
-        document.getElementById("paySep").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("paySep").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 10) {
+            @if (DateTime.Now.Month == 10) {
         <text>
-        document.getElementById("payOct").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payOct").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
              }
-        @if (DateTime.Now.Month == 11) {
+            @if (DateTime.Now.Month == 11) {
         <text>
-        document.getElementById("payNov").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payNov").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-        @if (DateTime.Now.Month == 12) {
+            @if (DateTime.Now.Month == 12) {
         <text>
-        document.getElementById("payDec").innerHTML = "Paid";
-        document.getElementById("payButtonMonth").innerHTML = "Paid";
-        document.getElementById("payBtn").disabled = true;
-        </text>
+            document.getElementById("payDec").innerHTML = "Paid";
+            document.getElementById("payButtonMonth").innerHTML = "Paid";
+            document.getElementById("payBtn").disabled = true;
+            </text>
             }
-    }
-</script>
+        }
+    </script>
