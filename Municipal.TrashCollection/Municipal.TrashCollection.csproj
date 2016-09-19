@@ -212,6 +212,10 @@
     <Compile Include="Migrations\201609192106442_added Admin column to AspNetUsers.Designer.cs">
       <DependentUpon>201609192106442_added Admin column to AspNetUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609192117409_added values for address database.cs" />
+    <Compile Include="Migrations\201609192117409_added values for address database.Designer.cs">
+      <DependentUpon>201609192117409_added values for address database.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -512,6 +516,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609192106442_added Admin column to AspNetUsers.resx">
       <DependentUpon>201609192106442_added Admin column to AspNetUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609192117409_added values for address database.resx">
+      <DependentUpon>201609192117409_added values for address database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
