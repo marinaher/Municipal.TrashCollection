@@ -7,6 +7,37 @@ namespace Municipal.TrashCollection.Models
 {
     public class IndexViewModel
     {
+        public ApplicationDbContext db = new ApplicationDbContext();
+        [Display(Name = "Email")]
+        public string Email { get; set; }
+
+        [Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
+        public string LastName { get; set; }
+
+        [Display(Name = "Street")]
+        public string Street { get; set; }
+
+        [Display(Name = "City")]
+        public string City { get; set; }
+
+        [Display(Name = "State")]
+        public string State { get; set; }
+
+        [Display(Name = "Zip Code")]
+        public string ZipCode { get; set; }
+
+        [Display(Name = "Pickup Day")]
+
+        public ApplicationUser currentUser { get; set; }
+        public virtual RegisterdUserInfo RegisteredUser { get; set; }
+
+        public string PickupDay { get; set; }
+
+        public bool IsOnVacation { get; set; }
+
         public bool HasPassword { get; set; }
         public IList<UserLoginInfo> Logins { get; set; }
         public string PhoneNumber { get; set; }

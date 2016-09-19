@@ -280,4 +280,6 @@ C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Mu
 C:\Users\reald\Documents\GitHub\devCodeCampProjects\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedgooglemap.resources
 C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.reset.resources
 C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.csproj.GenerateResource.Cache
-C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.majorupdates.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addingApplicationDbContext.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addedregistereduser.resources
+C:\Users\Sheng\Documents\GitHub\Municipal.TrashCollection\Municipal.TrashCollection\obj\Debug\Municipal.TrashCollection.Migrations.addeddatepicker.resources
