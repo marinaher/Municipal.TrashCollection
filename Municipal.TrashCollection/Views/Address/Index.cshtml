@@ -12,22 +12,28 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ApartmentNumber)
+            @Html.DisplayNameFor(m => m.Street)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.City)
+            @Html.DisplayNameFor(m => m.ApartmentNumber)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.State)
+            @Html.DisplayNameFor(m => m.City)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.ZipCode)
+            @Html.DisplayNameFor(m => m.State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(m => m.ZipCode)
         </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Street)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.ApartmentNumber)
         </td>

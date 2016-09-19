@@ -10,7 +10,13 @@ namespace Municipal.TrashCollection.Models
     {
         [Key]
         public int ID { get; set; }
-        public DateTime Week { get; set; }
-        public DateTime Month { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [Display(Name = "Start Date")]
+        public DateTime? StartDate { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [Display(Name = "End Date")]
+        public DateTime? EndDate { get; set; }
     }
 }

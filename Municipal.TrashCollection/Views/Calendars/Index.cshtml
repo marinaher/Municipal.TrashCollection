@@ -12,10 +12,10 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Week)
+            @Html.DisplayNameFor(m => m.StartDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Month)
+            @Html.DisplayNameFor(m => m.EndDate)
         </th>
         <th></th>
     </tr>
@@ -23,10 +23,10 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Week)
+            @Html.DisplayFor(modelItem => item.StartDate)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Month)
+            @Html.DisplayFor(modelItem => item.EndDate)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

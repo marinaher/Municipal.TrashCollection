@@ -3,213 +3,213 @@ namespace Municipal.TrashCollection.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class migrationerrorsresetmigrations : DbMigration
+    public partial class reset : DbMigration
     {
         public override void Up()
         {
             CreateTable(
                 "dbo.Addresses",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        Street = c.String(),
-                        ApartmentNumber = c.String(),
-                        City = c.String(),
-                        State = c.String(),
-                        ZipCode = c.Int(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    Street = c.String(),
+                    ApartmentNumber = c.String(),
+                    City = c.String(),
+                    State = c.String(),
+                    ZipCode = c.Int(nullable: false),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.Calendars",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        Week = c.DateTime(nullable: false),
-                        Month = c.DateTime(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    Week = c.DateTime(nullable: false),
+                    Month = c.DateTime(nullable: false),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.Collections",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        Date = c.DateTime(nullable: false),
-                        Time = c.DateTime(nullable: false),
-                        ServiceCost = c.Decimal(nullable: false, precision: 18, scale: 2),
-                        TotalServiceCost = c.Decimal(nullable: false, precision: 18, scale: 2),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    Date = c.DateTime(nullable: false),
+                    Time = c.DateTime(nullable: false),
+                    ServiceCost = c.Decimal(nullable: false, precision: 18, scale: 2),
+                    TotalServiceCost = c.Decimal(nullable: false, precision: 18, scale: 2),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.Collection_Calendar",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        CollectionID = c.Int(nullable: false),
-                        CalendarID = c.Int(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    CollectionID = c.Int(nullable: false),
+                    CalendarID = c.Int(nullable: false),
+                })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Calendars", t => t.CalendarID, cascadeDelete: true)
                 .ForeignKey("dbo.Collections", t => t.CollectionID, cascadeDelete: true)
                 .Index(t => t.CollectionID)
                 .Index(t => t.CalendarID);
-            
+
             CreateTable(
                 "dbo.CreditCards",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        CardHolderName = c.String(),
-                        CardNumber = c.Int(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    CardHolderName = c.String(),
+                    CardNumber = c.Int(nullable: false),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.Employees",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        EmployeeID = c.Int(nullable: false),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        DOB = c.DateTime(nullable: false),
-                        IsActive = c.Boolean(nullable: false),
-                        CollectionID = c.Int(nullable: false),
-                        RouteID = c.Int(nullable: false),
-                        UserName = c.String(),
-                        Password = c.String(),
-                        ResetPassword = c.String(),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    EmployeeID = c.Int(nullable: false),
+                    FirstName = c.String(),
+                    LastName = c.String(),
+                    DOB = c.DateTime(nullable: false),
+                    IsActive = c.Boolean(nullable: false),
+                    CollectionID = c.Int(nullable: false),
+                    RouteID = c.Int(nullable: false),
+                    UserName = c.String(),
+                    Password = c.String(),
+                    ResetPassword = c.String(),
+                })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.Collections", t => t.CollectionID, cascadeDelete: true)
                 .ForeignKey("dbo.Routes", t => t.RouteID, cascadeDelete: true)
                 .Index(t => t.CollectionID)
                 .Index(t => t.RouteID);
-            
+
             CreateTable(
                 "dbo.Routes",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        RouteZipCode = c.Int(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    RouteZipCode = c.Int(nullable: false),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.PaymentTypes",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        CreditCard_ID = c.Int(nullable: false),
-                        PayPal_ID = c.Int(nullable: false),
-                        TotalAmount = c.Int(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    CreditCard_ID = c.Int(nullable: false),
+                    PayPal_ID = c.Int(nullable: false),
+                    TotalAmount = c.Int(nullable: false),
+                })
                 .PrimaryKey(t => t.ID)
                 .ForeignKey("dbo.CreditCards", t => t.CreditCard_ID, cascadeDelete: true)
                 .ForeignKey("dbo.PayPals", t => t.PayPal_ID, cascadeDelete: true)
                 .Index(t => t.CreditCard_ID)
                 .Index(t => t.PayPal_ID);
-            
+
             CreateTable(
                 "dbo.PayPals",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.RegisterdUserInfoes",
                 c => new
-                    {
-                        ID = c.Int(nullable: false, identity: true),
-                        PickupDay = c.String(),
-                        MonthlyBill = c.Double(nullable: false),
-                        AnnualBill = c.Double(nullable: false),
-                        TotalBill = c.Double(nullable: false),
-                    })
+                {
+                    ID = c.Int(nullable: false, identity: true),
+                    PickupDay = c.String(),
+                    MonthlyBill = c.Double(nullable: false),
+                    AnnualBill = c.Double(nullable: false),
+                    TotalBill = c.Double(nullable: false),
+                })
                 .PrimaryKey(t => t.ID);
-            
+
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
-                    {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        Name = c.String(nullable: false, maxLength: 256),
-                    })
+                {
+                    Id = c.String(nullable: false, maxLength: 128),
+                    Name = c.String(nullable: false, maxLength: 256),
+                })
                 .PrimaryKey(t => t.Id)
                 .Index(t => t.Name, unique: true, name: "RoleNameIndex");
-            
+
             CreateTable(
                 "dbo.AspNetUserRoles",
                 c => new
-                    {
-                        UserId = c.String(nullable: false, maxLength: 128),
-                        RoleId = c.String(nullable: false, maxLength: 128),
-                    })
+                {
+                    UserId = c.String(nullable: false, maxLength: 128),
+                    RoleId = c.String(nullable: false, maxLength: 128),
+                })
                 .PrimaryKey(t => new { t.UserId, t.RoleId })
                 .ForeignKey("dbo.AspNetRoles", t => t.RoleId, cascadeDelete: true)
                 .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
                 .Index(t => t.UserId)
                 .Index(t => t.RoleId);
-            
+
             CreateTable(
                 "dbo.AspNetUsers",
                 c => new
-                    {
-                        Id = c.String(nullable: false, maxLength: 128),
-                        FirstName = c.String(),
-                        LastName = c.String(),
-                        Address_id = c.Int(),
-                        Email = c.String(maxLength: 256),
-                        EmailConfirmed = c.Boolean(nullable: false),
-                        PasswordHash = c.String(),
-                        SecurityStamp = c.String(),
-                        PhoneNumber = c.String(),
-                        PhoneNumberConfirmed = c.Boolean(nullable: false),
-                        TwoFactorEnabled = c.Boolean(nullable: false),
-                        LockoutEndDateUtc = c.DateTime(),
-                        LockoutEnabled = c.Boolean(nullable: false),
-                        AccessFailedCount = c.Int(nullable: false),
-                        UserName = c.String(nullable: false, maxLength: 256),
-                        Employee_ID = c.Int(),
-                    })
+                {
+                    Id = c.String(nullable: false, maxLength: 128),
+                    FirstName = c.String(),
+                    LastName = c.String(),
+                    Address_id = c.Int(),
+                    Email = c.String(maxLength: 256),
+                    EmailConfirmed = c.Boolean(nullable: false),
+                    PasswordHash = c.String(),
+                    SecurityStamp = c.String(),
+                    PhoneNumber = c.String(),
+                    PhoneNumberConfirmed = c.Boolean(nullable: false),
+                    TwoFactorEnabled = c.Boolean(nullable: false),
+                    LockoutEndDateUtc = c.DateTime(),
+                    LockoutEnabled = c.Boolean(nullable: false),
+                    AccessFailedCount = c.Int(nullable: false),
+                    UserName = c.String(nullable: false, maxLength: 256),
+                    Employee_ID = c.Int(),
+                })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Addresses", t => t.Address_id)
                 .ForeignKey("dbo.Employees", t => t.Employee_ID)
                 .Index(t => t.Address_id)
                 .Index(t => t.UserName, unique: true, name: "UserNameIndex")
                 .Index(t => t.Employee_ID);
-            
+
             CreateTable(
                 "dbo.AspNetUserClaims",
                 c => new
-                    {
-                        Id = c.Int(nullable: false, identity: true),
-                        UserId = c.String(nullable: false, maxLength: 128),
-                        ClaimType = c.String(),
-                        ClaimValue = c.String(),
-                    })
+                {
+                    Id = c.Int(nullable: false, identity: true),
+                    UserId = c.String(nullable: false, maxLength: 128),
+                    ClaimType = c.String(),
+                    ClaimValue = c.String(),
+                })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
                 .Index(t => t.UserId);
-            
+
             CreateTable(
                 "dbo.AspNetUserLogins",
                 c => new
-                    {
-                        LoginProvider = c.String(nullable: false, maxLength: 128),
-                        ProviderKey = c.String(nullable: false, maxLength: 128),
-                        UserId = c.String(nullable: false, maxLength: 128),
-                    })
+                {
+                    LoginProvider = c.String(nullable: false, maxLength: 128),
+                    ProviderKey = c.String(nullable: false, maxLength: 128),
+                    UserId = c.String(nullable: false, maxLength: 128),
+                })
                 .PrimaryKey(t => new { t.LoginProvider, t.ProviderKey, t.UserId })
                 .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
                 .Index(t => t.UserId);
-            
+
         }
-        
+
         public override void Down()
         {
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");

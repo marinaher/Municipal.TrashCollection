@@ -10,9 +10,13 @@ namespace Municipal.TrashCollection.Models
     {
         [Key]
         public int ID { get; set; }
+
+        [DataType(DataType.DateTime)]
+        [Display(Name = "Pickup Day")]
         public string PickupDay { get; set; }
+
+        [DataType(DataType.Currency)]
+        [Display(Name = "Monthly Bill")]
         public double MonthlyBill { get; set; }
-        public double AnnualBill { get; set; }
-        public double TotalBill { get; set; }
     }
 }

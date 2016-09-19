@@ -5,19 +5,31 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Municipal.TrashCollection.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
+
+        [Display(Name = "Last Name")]
         public string LastName { get; set; }
+
+        [ForeignKey("Employee")]
+        [Display(Name = "Employee ID")]
+        public int? Employee_id { get; set; }
         public Employee Employee { get; set; }
 
         [ForeignKey("Address")]
+        [Display(Name = "Address ID")]
         public int? Address_id { get; set; }
         public virtual Address Address { get; set; }
+
+        [Display(Name = "Pickup Day")]
+        public string PickupDay { get; set; }  //day of week
 
 
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
@@ -42,15 +54,9 @@ namespace Municipal.TrashCollection.Models
         }
         public class ApplicationUser : IdentityUser { public DateTime BirthDate { get; set; } };
         public DbSet<Calendar> calendar { get; set; }
-        public DbSet <Collection> collection { get; set; }
-        public DbSet <Collection_Calendar> collection_Calendar{ get; set; }
         public DbSet <Employee> employee { get; set; }
         public DbSet <Route> route { get; set; }
-        public DbSet<PayPal> payPal { get; set; }
         public DbSet<Address> address { get; set; }
-        public DbSet<CreditCard> creditCard { get; set; }
-        public DbSet<PaymentType> paymentType { get; set; }
-
-        public System.Data.Entity.DbSet<Municipal.TrashCollection.Models.RegisterdUserInfo> RegisterdUserInfoes { get; set; }
+        public DbSet<RegisterdUserInfo> RegisterdUserInfoes { get; set; }
     }
 }
