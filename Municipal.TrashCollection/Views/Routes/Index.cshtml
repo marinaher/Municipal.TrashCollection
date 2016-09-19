@@ -23,7 +23,16 @@
 
 <h2>Employee Route</h2>
 
-<p> Your schedule route for today is:</p>
+<p>List of houses requesting trash collection today: </p>
+
+<ul>
+    <li>13460 Bobby Ln, Elm Grove, WI 53122, USA</li>
+    <li>14205 Heatherwood Ct, Elm Grove, WI 53122, USA</li>
+    <li>13475 Bobby Ln, Elm Grove, WI 53122, USA</li>
+    <li>13380 Gremoor Dr, Elm Grove, WI 53122, USA</li>
+    <li>13240 Gremoor Dr, Elm Grove, WI 53122, USA</li>
+    <li>13205 Gremoor Dr, Elm Grove, WI 53122, USA</li>
+</ul>
 
 <br />
 <!-- This is the div that will contain the Google Map -->
@@ -49,7 +58,7 @@
 
             // These are options that set initial zoom level, where the map is centered globally to start, and the type of map to show
             var mapOptions = {
-                zoom: 13,
+                zoom: 17,
                 center: { lat: 43.054460, lng: -88.078413 },
                 mapTypeId: google.maps.MapTypeId.G_NORMAL_MAP
             };
@@ -59,18 +68,38 @@
 
             // a sample list of places for trash collection
             var data = [
-                      { "Id": 1, "PlaceName": "House1", "GeoLat": "43.055195", "GeoLong": "-88.080225" },
-                      { "Id": 2, "PlaceName": "House2 ", "GeoLat": "43.055107", "GeoLong": "-88.080874" },
-                      { "Id": 3, "PlaceName": "House3", "GeoLat": "43.054694", "GeoLong": "-88.080320" },
-                      { "Id": 4, "PlaceName": "House4", "GeoLat": "43.054018", "GeoLong": "-88.079919" }
+                      {
+                          "Id": 1, "PlaceName": "13460 Bobby Ln, Elm Grove, WI 53122, USA",
+                          "GeoLat": "43.055195", "GeoLong": "-88.080225"
+                      },
+                      {
+                          "Id": 2, "PlaceName": "14205 Heatherwood Ct, Elm Grove, WI 53122, USA ",
+                          "GeoLat": "43.055107", "GeoLong": "-88.080874"
+                      },
+                      {
+                          "Id": 3, "PlaceName": "13475 Bobby Ln, Elm Grove, WI 53122, USA",
+                          "GeoLat": "43.054694", "GeoLong": "-88.080320"
+                      },
+                      {
+                          "Id": 4, "PlaceName": "13380 Gremoor Dr, Elm Grove, WI 53122, USA",
+                          "GeoLat": "43.054018", "GeoLong": "-88.079919"
+                      },
+                      {
+                          "Id": 5, "PlaceName": "13240 Gremoor Dr, Elm Grove, WI 53122, USA",
+                          "GeoLat": "43.054456", "GeoLong": "-88.078346"
+                      },
+                      {
+                          "Id": 6, "PlaceName": "13205 Gremoor Dr, Elm Grove, WI 53122, USA",
+                          "GeoLat": "43.053939", "GeoLong": "-88.077803"
+                      }
+
             ];
 
             // Using the JQuery "each" selector to iterate through the JSON list and drop marker pins
 
             $.each(data, function (i, item) {
                 var marker = new google.maps.Marker({
-                    'position': new google.maps.LatLng(43.054460, -88.078413),
-                    //'position': new google.maps.LatLng(item.GeoLong, item.GeoLat),
+                    'position': new google.maps.LatLng(item.GeoLat, item.GeoLong),
                     'map': map,
                     'title': item.PlaceName
                 });
