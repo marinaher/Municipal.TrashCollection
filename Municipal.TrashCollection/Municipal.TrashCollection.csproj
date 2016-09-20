@@ -220,6 +220,10 @@
     <Compile Include="Migrations\201609200341315_adding migrations.Designer.cs">
       <DependentUpon>201609200341315_adding migrations.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201609201244231_updated display for isonvacation.cs" />
+    <Compile Include="Migrations\201609201244231_updated display for isonvacation.Designer.cs">
+      <DependentUpon>201609201244231_updated display for isonvacation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Address.cs" />
@@ -526,6 +530,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201609200341315_adding migrations.resx">
       <DependentUpon>201609200341315_adding migrations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609201244231_updated display for isonvacation.resx">
+      <DependentUpon>201609201244231_updated display for isonvacation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

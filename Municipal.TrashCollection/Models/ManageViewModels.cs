@@ -35,6 +35,7 @@ namespace Municipal.TrashCollection.Models
         public ApplicationUser currentUser { get; set; }
         public virtual RegisterdUserInfo RegisteredUser { get; set; }
 
+        [Display (Name = "Check box and select date range")]
         public bool IsOnVacation { get; set; }
 
         public bool HasPassword { get; set; }
