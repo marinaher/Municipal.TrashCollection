@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Municipal.TrashCollection.Models;
+using Microsoft.AspNet.Identity;
 
 namespace Municipal.TrashCollection.Controllers
 {
@@ -17,6 +18,8 @@ namespace Municipal.TrashCollection.Controllers
         // GET: Address
         public ActionResult Index()
         {
+            var userId = User.Identity.GetUserId();
+
             return View(db.address.ToList());
         }
 
